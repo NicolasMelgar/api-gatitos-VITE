@@ -1,6 +1,6 @@
 
 import { useState, useEffect } from "react"
-import CardCat from "../CardCat/CardCAt";
+import CardCat from "../CardCat/CardCat";
 import './Fetch.css'
 const Fetch = () => {
     const [data, setData] = useState([])
