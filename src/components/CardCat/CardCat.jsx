@@ -4,16 +4,18 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { Button, CardActionArea, CardActions } from '@mui/material';
+import './CardCat.css'
 
 const CardCat = ({cat}) => {
     return (
-        <Card sx={{ maxWidth: 345 }}>
-            <CardActionArea>
+        <Card className='sombra' sx={{ maxWidth: 445}}>
+            <CardActionArea >
                 <CardMedia
+                    className='mi_img'
                     component="img"
                     height="250px" //Esto modifica el alto de la tarjeta
                     image={cat.url}
-                    alt="green iguana"
+                    alt="imágenes de gatos usando API"
                 />
                 <CardContent>
                     <Typography gutterBottom variant="h5" component="div">
@@ -27,7 +29,7 @@ const CardCat = ({cat}) => {
             </CardActionArea>
             <CardActions>
                 <Button size="small" color="primary">
-                    <a href="https://developers.thecatapi.com/view-account/ylX4blBYT9FaoVd6OhvR?report=bOoHBz-8t" target='blank'>Ver link de la API</a> 
+                    <a href={cat.url} target='blank'>Ver url de la foto</a> 
                 </Button>
             </CardActions>
         </Card>

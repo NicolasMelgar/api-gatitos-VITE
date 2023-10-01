@@ -1,0 +1,13 @@
+.sombra{
+    box-shadow: 8px 8px 20px 2px black;
+    transition: all 1s linear !important;
+}
+
+.sombra:hover{
+    transform: scale(1.2);
+    box-shadow: 1px 28px 40px 12px black;
+}
+
+.mi_img{
+    height: 50vh;
+}

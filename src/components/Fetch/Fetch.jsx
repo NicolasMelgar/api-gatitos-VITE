@@ -6,9 +6,10 @@ const Fetch = () => {
     const [data, setData] = useState([])
 
     useEffect(() => {
-        fetch("https://api.thecatapi.com/v1/images/search?limit=10")
+        fetch("https://api.thecatapi.com/v1/images/search?limit=9")
             .then((response) => response.json())
             .then((data) => setData(data));
+           
     }, []);
     return (
         <div className="contenedor">
